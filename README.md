@@ -92,7 +92,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d261d191-489e-4000-8db9-6595a8ab16c4/deploy-status)](https://app.netlify.com/sites/pierce-faraone/deploys)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
 
