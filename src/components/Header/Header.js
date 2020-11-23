@@ -37,8 +37,6 @@ const Header = ({ activePage, siteTitle }) => (
         />
         <span>LinkedIn</span>
       </NavLink>
-
-      {/* TODO: add link to resume */}
       {/* <div
         style={{
           margin: `0 auto`,
