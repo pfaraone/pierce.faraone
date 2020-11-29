@@ -2,7 +2,12 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const StyledFooter = styled.footer`
-  margin-top: 2rem;
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2em;
   text-align: center;
   font-size: 2em;
+  margin-bottom: 2em;
 `
