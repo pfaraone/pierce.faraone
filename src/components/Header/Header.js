@@ -2,11 +2,9 @@ import { Link } from "gatsby"
 import Img from "gatsby-image" // highlight-line
 import PropTypes from "prop-types"
 import React from "react"
-// import GatsbyIcon from "../../images/gatsby-icon.png"
-import PierceFaraoneResume from "../../../static/Pierce_Faraone_Resume.pdf"
-import AdobeAcrobatIcon from "../../assets/iconmonstr-file-36.svg"
-import LinkedInIcon from "../../assets/iconmonstr-linkedin-3.svg"
-import { linkedin, dropboxresume } from "../../links"
+
+import {GitHubIcon, LinkedInIcon, AdobeAcrobatIcon} from "../../assets/"
+import { linkedin, dropboxresume,github } from "../../links"
 
 import { StyledHeader, Space, NavLink } from "./styles"
 
@@ -20,8 +18,8 @@ const Header = ({ activePage, siteTitle }) => (
       <NavLink to={dropboxresume} target="_blank">
         <AdobeAcrobatIcon
           style={{
-            maxWidth: `3em`,
-            maxHeight: `3em`,
+            maxWidth: `3.0em`,
+            maxHeight: `3.0em`,
             marginBottom: `1em`,
           }}
         />
@@ -30,12 +28,22 @@ const Header = ({ activePage, siteTitle }) => (
       <NavLink to={linkedin} target="_blank">
         <LinkedInIcon
           style={{
-            maxWidth: `3em`,
-            maxHeight: `3em`,
+            maxWidth: `3.0em`,
+            maxHeight: `3.0em`,
             marginBottom: `1em`,
           }}
         />
         <span>LinkedIn</span>
+      </NavLink>
+      <NavLink to={github} target="_blank">
+        <GitHubIcon
+          style={{
+            maxWidth: `3.0em`,
+            maxHeight: `3.0em`,
+            marginBottom: `1em`,
+          }}
+        />
+        <span>GitHub</span>
       </NavLink>
       {/* <div
         style={{
