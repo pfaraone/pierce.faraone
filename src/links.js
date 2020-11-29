@@ -1,4 +1,4 @@
 export const github = "https://github.com/pfaraone"
 export const linkedin = "https://www.linkedin.com/in/pierce-faraone/"
 export const dropboxresume =
-  "https://www.dropbox.com/s/p72uw2ilovdf17s/Pierce_Faraone_Resume.pdf?dl=0"
+  "https://docs.google.com/document/d/11ggGGeFiCK_pWSmPEvTq53K9qjJQQUI3f6cGlcUAgss/edit?usp=sharing"
