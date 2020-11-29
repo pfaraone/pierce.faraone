@@ -2,15 +2,15 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const StyledHeader = styled.header`
-  background: var(--primary);
-  margin: 0 auto;
+  // background: var(--background)
+  margin: 0 15rem;
   margin-bottom: 1.45rem;
   maxwidth: 100%;
-  padding: 1.45rem 1.0875rem;
+  padding: 1.5rem;
   color: var(--secondary);
   // border: 5px solid palevioletred;
   nav {
-    line-height: inherit;
+    line-height: 3;
     max-width: 100%;
     display: flex;
     align-items: flex-start;
@@ -18,14 +18,13 @@ export const StyledHeader = styled.header`
     > * {
       display: flex;
       align-items: center;
-      padding: 1rem;
     }
   }
   .site-title {
     // margin-left: 1.5
-    padding: 1.45rem 1.0875rem;
-    color: blue;
-    font-size: 22px;
+    padding: 1.45rem;
+    color: var(--primary);
+    font-size: 3em;
     font-weight: bold;
     text-decoration: none;
     &:hover {
@@ -39,8 +38,6 @@ export const StyledHeader = styled.header`
 export const Space = styled.span`
   flex-grow: 1;
   padding: 0 !important;
-  // border: 5px solid yellow;
-
   a & {
     min-width: 1rem;
   }
@@ -49,27 +46,24 @@ export const Space = styled.span`
 export const NavLink = styled(Link)`
   flex-direction: column;
   justify-content: center;
-  margin-left: 1rem;
+  // margin-left: 1rem;
+  margin-top: 1.5rem;
   padding: 0 !important;
   position: relative;
   text-decoration: none;
-  width: calc(3 * var(--header-padding));
+  width: calc(4 * var(--header-padding));
   // border: 3px solid red;
   // ${props => (props.active ? "color: var(--secondary) !important;" : "")}
   span {
     display: inline-block;
-    color: var(--secondary)
+    color: var(--primary);
     font-size: 1.5em;
     font-weight: bold;
+    line-height: 2;
 
-    line-height: 1;
-    // padding-right: 1rem;
-    // margin-right: 1rem;
-    &.active,
     &:hover {
       color: rebeccapurple;
       text-decoration: underline;
-      // border-bottom: 2px solid green;
     }
   }
 `
