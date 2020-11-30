@@ -3,8 +3,8 @@ import Img from "gatsby-image" // highlight-line
 import PropTypes from "prop-types"
 import React from "react"
 
-import {GitHubIcon, LinkedInIcon, AdobeAcrobatIcon} from "../../assets/"
-import { linkedin, dropboxresume,github } from "../../links"
+import { GitHubIcon, LinkedInIcon, AdobeAcrobatIcon } from "../../assets/"
+import { linkedin, googledocsresume, github } from "../../links"
 
 import { StyledHeader, Space, NavLink } from "./styles"
 
@@ -15,21 +15,12 @@ const Header = ({ activePage, siteTitle }) => (
         {siteTitle}
       </Link>
       <Space />
-      <NavLink to={dropboxresume} target="_blank">
-        <AdobeAcrobatIcon
-          style={{
-            maxWidth: `3.0em`,
-            maxHeight: `3.0em`,
-            marginBottom: `1em`,
-          }}
-        />
-        <span>Resume</span>
-      </NavLink>
       <NavLink to={linkedin} target="_blank">
         <LinkedInIcon
           style={{
             maxWidth: `3.0em`,
             maxHeight: `3.0em`,
+            marginTop: `1em`,
             marginBottom: `1em`,
           }}
         />
@@ -40,31 +31,23 @@ const Header = ({ activePage, siteTitle }) => (
           style={{
             maxWidth: `3.0em`,
             maxHeight: `3.0em`,
+            marginTop: `1em`,
             marginBottom: `1em`,
           }}
         />
         <span>GitHub</span>
       </NavLink>
-      {/* <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          // padding: `1.45rem 1.0875rem`,
-          borderStyle: `1px solid`,
-        }}
-      >
-        <h1>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
-        </h1>
-      </div> */}
+      <NavLink to={googledocsresume} target="_blank">
+        <AdobeAcrobatIcon
+          style={{
+            maxWidth: `3.0em`,
+            maxHeight: `3.0em`,
+            marginTop: `1em`,
+            marginBottom: `1em`,
+          }}
+        />
+        <span>Resume</span>
+      </NavLink>
     </nav>
   </StyledHeader>
   // <header

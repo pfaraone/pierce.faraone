@@ -5,13 +5,20 @@ import Layout from "../components/Layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+// TODO: how to style a page - typical margins etc. 
 const IndexPage = () => (
   <Layout>
+    {/* TODO: perhaps add a body section that brings this down */}
     <SEO title="Home" />
+
     <h1>Hi. I'm Pierce.</h1>
     <br/>
     <p>
       I'm a full-stack developer in Singapore currently working at the Accenture Innovation Hub.
+    </p>
+    <p > 
+      {/* TODO: increase line height between paragraphs */}
+      You can reach out to me at <a href="mailto:pierce.faraone@gmail.com" target="_blank" rel="noreferrer">pierce.faraone@gmail.com </a>
     </p>
     <br />
     {/* <p>Welcome to your new Gatsby site.</p>

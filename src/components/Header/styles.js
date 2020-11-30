@@ -3,41 +3,42 @@ import { Link } from "gatsby"
 
 export const StyledHeader = styled.header`
   // background: var(--background)
-  margin: 0 15rem;
+  margin: 0 auto;
   margin-bottom: 1.45rem;
-  maxwidth: 100%;
-  padding: 1.5rem;
+  width: 100%;
+  // padding: 1.5rem 0rem;
   color: var(--secondary);
   // border: 5px solid palevioletred;
   nav {
-    line-height: 3;
-    max-width: 100%;
+    margin: 0 auto;
+    line-height: 4;
+    max-width: 960px;
     display: flex;
     align-items: flex-start;
-    // border: 5px solid palevioletred;
+    // border: 5px solid green;
     > * {
       display: flex;
       align-items: center;
     }
   }
   .site-title {
-    // margin-left: 1.5
-    padding: 1.45rem;
     color: var(--primary);
     font-size: 3em;
     font-weight: bold;
     text-decoration: none;
+    // border: 5px solid orange;
     &:hover {
       color: rebeccapurple;
-      // border-bottom: 2px solid green;
+      text-decoration: underline;
     }
-    // border: 5px solid palevioletred;
+   
   }
 `
 
 export const Space = styled.span`
   flex-grow: 1;
   padding: 0 !important;
+  // border: 5px solid orange;
   a & {
     min-width: 1rem;
   }
@@ -57,9 +58,9 @@ export const NavLink = styled(Link)`
   span {
     display: inline-block;
     color: var(--primary);
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
-    line-height: 2;
+    line-height: 1;
 
     &:hover {
       color: rebeccapurple;
