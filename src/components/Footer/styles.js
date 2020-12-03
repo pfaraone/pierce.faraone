@@ -8,6 +8,6 @@ export const StyledFooter = styled.footer`
   width: 100%;
   margin-top: 2em;
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
   margin-bottom: 2em;
 `
