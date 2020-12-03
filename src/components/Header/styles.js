@@ -2,20 +2,18 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const StyledHeader = styled.header`
-  // background: var(--background)
-  margin: 0 auto;
-  margin-bottom: 1.45rem;
+  margin: 2rem auto;
   width: 100%;
-  // padding: 1.5rem 0rem;
   color: var(--secondary);
-  // border: 5px solid palevioletred;
+  // border: 4px solid orange;
+  line-height: var(--header-height);
   nav {
-    margin: 0 auto;
-    line-height: 4;
-    max-width: 960px;
     display: flex;
-    align-items: flex-start;
-    // border: 5px solid green;
+    // align-items: baseline;
+    margin: inherit;
+    line-height: inherit;
+    max-width: 960px;
+    // border: 4px solid blue;
     > * {
       display: flex;
       align-items: center;
@@ -23,10 +21,14 @@ export const StyledHeader = styled.header`
   }
   .site-title {
     color: var(--primary);
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     text-decoration: none;
-    // border: 5px solid orange;
+    // border: 3px solid red;
+    text-align: center;
+    padding-top:1rem;
+    paddin-bottom:0rem;
+    // border: 5px solid violet;
     &:hover {
       color: rebeccapurple;
       text-decoration: underline;
@@ -38,33 +40,34 @@ export const StyledHeader = styled.header`
 export const Space = styled.span`
   flex-grow: 1;
   padding: 0 !important;
-  // border: 5px solid orange;
-  a & {
-    min-width: 1rem;
-  }
+  // border: 4px solid orange;
 `
 
 export const NavLink = styled(Link)`
   flex-direction: column;
   justify-content: center;
-  // margin-left: 1rem;
-  margin-top: 1.5rem;
   padding: 0 !important;
   position: relative;
   text-decoration: none;
-  width: calc(4 * var(--header-padding));
+  width: calc(2.5 * var(--header-padding));
   // border: 3px solid red;
   // ${props => (props.active ? "color: var(--secondary) !important;" : "")}
+
   span {
     display: inline-block;
     color: var(--primary);
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-weight: bold;
     line-height: 1;
-
     &:hover {
       color: rebeccapurple;
       text-decoration: underline;
     }
   }
+`
+
+export const MobileNav = styled.div`
+padding: 0 auto;
+margin: 0 auto;
+border: 3px solid red;
 `

@@ -32,7 +32,6 @@ const Layout = ({ children }) => {
       <Body>
         <Main>{children}</Main>
       </Body>
-      {/* TODO: FLUSH FOOTER DOWN TO THE BOTTOM */}
       <Footer />
     </>
   )

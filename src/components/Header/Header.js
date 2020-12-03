@@ -7,6 +7,8 @@ import { GitHubIcon, LinkedInIcon, AdobeAcrobatIcon } from "../../assets/"
 import { linkedin, googledocsresume, github } from "../../links"
 
 import { StyledHeader, Space, NavLink } from "./styles"
+import StyledIcon from "../Icon"
+
 
 const Header = ({ activePage, siteTitle }) => (
   <StyledHeader>
@@ -16,48 +18,19 @@ const Header = ({ activePage, siteTitle }) => (
       </Link>
       <Space />
       <NavLink to={linkedin} target="_blank">
-        <LinkedInIcon
-          style={{
-            maxWidth: `3.0em`,
-            maxHeight: `3.0em`,
-            marginTop: `1em`,
-            marginBottom: `1em`,
-          }}
-        />
+        <StyledIcon name="LinkedInIcon"/>
         <span>LinkedIn</span>
       </NavLink>
       <NavLink to={github} target="_blank">
-        <GitHubIcon
-          style={{
-            maxWidth: `3.0em`,
-            maxHeight: `3.0em`,
-            marginTop: `1em`,
-            marginBottom: `1em`,
-          }}
-        />
+      <StyledIcon name="GitHubIcon"/>
         <span>GitHub</span>
       </NavLink>
       <NavLink to={googledocsresume} target="_blank">
-        <AdobeAcrobatIcon
-          style={{
-            maxWidth: `3.0em`,
-            maxHeight: `3.0em`,
-            marginTop: `1em`,
-            marginBottom: `1em`,
-          }}
-        />
+      <StyledIcon name="AdobeAcrobatIcon"/>
         <span>Resume</span>
       </NavLink>
     </nav>
   </StyledHeader>
-  // <header
-  //   style={{
-  //     background: `green`,
-  //     marginBottom: `1.45rem`,
-  //   }}
-  // >
-  //
-  //
 )
 
 /**
