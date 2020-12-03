@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const StyledHeader = styled.header`
-  margin: 2rem auto;
+  margin: 1rem auto;
   width: 100%;
   color: var(--secondary);
   // border: 4px solid orange;
@@ -21,7 +21,7 @@ export const StyledHeader = styled.header`
   }
   .site-title {
     color: var(--primary);
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
     text-decoration: none;
     // border: 3px solid red;
@@ -56,7 +56,7 @@ export const NavLink = styled(Link)`
   span {
     display: inline-block;
     color: var(--primary);
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: bold;
     line-height: 1;
     &:hover {
