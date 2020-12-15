@@ -3,8 +3,8 @@ const path = require("path")
 module.exports = {
   siteMetadata: {
     title: `Pierce Faraone`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Pierce Faraone's in-progress portfolio`,
+    author: `@piercefaraone`,
     url: `https://pierce-faraone.netlify.app/`,
   },
   plugins: [
